@@ -12,33 +12,9 @@ const Navbar = ({ idnumber }) => {
         <li>
           <Link
             style={{ textDecoration: "none" }}
-            to={`/${idnumber}/area_chart`}
-          >
-            Area Chart
-          </Link>
-        </li>
-        <li>
-          <Link
-            style={{ textDecoration: "none" }}
             to={`/${idnumber}/bar_chart`}
           >
             Bar Chart
-          </Link>
-        </li>
-        <li>
-          <Link
-            style={{ textDecoration: "none" }}
-            to={`/${idnumber}/bubble_chart`}
-          >
-            Bubble Chart
-          </Link>
-        </li>
-        <li>
-          <Link
-            style={{ textDecoration: "none" }}
-            to={`/${idnumber}/column_chart`}
-          >
-            Column Chart
           </Link>
         </li>
         <li>
@@ -63,14 +39,6 @@ const Navbar = ({ idnumber }) => {
             to={`/${idnumber}/pie_chart`}
           >
             Pie Chart
-          </Link>
-        </li>
-        <li>
-          <Link
-            style={{ textDecoration: "none" }}
-            to={`/${idnumber}/stacked_bar_charts`}
-          >
-            Stacked Bar Charts
           </Link>
         </li>
         <li>
