@@ -19,7 +19,7 @@ const listData = [
   },
   {
     Id: 3,
-    Name: "Mercedes-Maybach S580",
+    Name: "Mercedes-Maybach-S580",
     Fullname: "Mercedes-Benz Maybach S500",
     Status: "Mercedes Car",
     Description:
@@ -28,7 +28,7 @@ const listData = [
   },
   {
     Id: 4,
-    Name: "BMW X3 2017",
+    Name: "BMW-X3-2017",
     Fullname: "BMW X3 2017",
     Status: "BMW Car",
     Description:
