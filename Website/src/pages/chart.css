@@ -1,0 +1,46 @@
+.area_chart {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bar_chart {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.multiaxis_line_chart {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.doughtnur_chart {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pie_chart {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.analyse_by_language {
+  justify-content: center;
+  position: absolute;
+  margin-left: 1%;
+  margin-right: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
+
+.chart-item {
+  background-color: white;
+  width: 45%;
+  gap: 1em 1em;
+  box-shadow: 1px 2px 1px 1px;
+  border: 1px solid;
+}
+.chart-item:hover {
+  transform: scale(1.1);
+}

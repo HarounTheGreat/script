@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@500;800&family=Tilt+Neon&display=swap");
+.services {
+  gap: 4em;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.box1 {
+  flex-basis: 50%;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 0px 0px 30px 30px;
+}
+.box2 {
+  flex-basis: 50%;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 0px 0px 30px 30px;
+}
+.analyse-on-one-person-2 {
+  font-size: 30px;
+  font-family: "Tajawal", sans-serif;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.comparison-tow-persons-2 {
+  font-size: 30px;
+  font-family: "Tajawal", sans-serif;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.analyse-on-one-person-3 {
+  font-size: 20px;
+  font-family: "Tajawal", sans-serif;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tajawal:wght@500;800&family=Tilt+Neon&display=swap");
+.comparison-tow-persons-3 {
+  font-size: 20px;
+  font-family: "Tajawal", sans-serif;
+  margin-right: 10%;
+  margin-left: 10%;
+}

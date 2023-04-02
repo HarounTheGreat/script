@@ -1,0 +1,12 @@
+.services-list {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* justify-content: center; */
+  /* position: absolute; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  /* align-items: center; */
+}

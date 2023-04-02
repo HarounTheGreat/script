@@ -1,0 +1,47 @@
+.NavbarItems {
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: solid;
+  border-color: black;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 5%;
+  gap: 3em;
+  border-radius: 25px;
+}
+.item {
+  cursor: pointer;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  border: 2px;
+  font-family: "Bahnschrift", sans-serif;
+}
+
+.item-1 {
+  margin-right: auto;
+  width: 30px;
+}
+
+.item-2:hover {
+  color: white;
+  background-color: #1cf898;
+  transition: 0.5s;
+  padding: 1% 1%;
+}
+.item-3:hover {
+  color: white;
+  background-color: #1cf898;
+  transition: 0.5s;
+  padding: 1% 1%;
+}
+.item-4:hover {
+  color: white;
+  background-color: #1cf898;
+  transition: 0.5s;
+  padding: 1% 1%;
+}
