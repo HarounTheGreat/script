@@ -10,7 +10,7 @@
 
 **comporison between two Products to see from this chart we can see whitch product is the best seller**
 
-![img](./IMG/page2.png)
+![img](./IMG/comp.png)
 
 ---
 
