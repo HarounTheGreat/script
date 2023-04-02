@@ -10,15 +10,7 @@ const Dashboard = ({ data }) => {
     <>
       <Navbar idnumber={productId} />
       <section className="section">
-        <Recherche trump={data} />
-        {/* <BrowserRouter>
-          <Routes>
-            <Route
-              path="/area_chart"
-              element={<Area_chart trump_data={data} />}
-            />
-          </Routes>
-        </BrowserRouter> */}
+        <Recherche data={data} />
       </section>
     </>
   );

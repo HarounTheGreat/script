@@ -36,7 +36,7 @@ const Bubble_chart = () => {
     datasets: [
       labels,
       {
-        label: "Trump",
+        label: "Data",
         data: [
           {
             x: 20,

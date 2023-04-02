@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./chart.css";
 import Navbar from "../component/Navbar/Navbar";
+import PersonSelection from "../component/person_selection/person_selection";
+import { Link, useParams } from "react-router-dom";
 
 import {
   Languages_used,
@@ -16,17 +18,42 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { Choose_person, months } from "../component/filtring_function";
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+const Line_chart = () => {
+  let labels2;
+  let dataset2;
+  let data2;
+  let { personId } = useParams();
+  let person1 = Choose_person(personId);
+  let twoPersons = false;
+  const [state, setState] = useState({
+    p1n: person1.Fullname,
+    p1d: person1.person_data,
+    p2n: undefined,
+    p2d: undefined,
+  });
 
-const Line_chart = ({ trump_data, obama_data }) => {
-  ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend
-  );
-  const options = {
+  const changeState = (p1n, p1d, p2n, p2d) => {
+    setState({
+      p1n: p1n,
+      p1d: p1d,
+      p2n: p2n,
+      p2d: p2d,
+    });
+  };
+  twoPersons = state.p2n !== undefined;
+
+  let options;
+  let options2;
+  options = {
     responsive: true,
     plugins: {
       legend: {
@@ -34,76 +61,76 @@ const Line_chart = ({ trump_data, obama_data }) => {
       },
       title: {
         display: true,
-        text: "Trump",
+        text: "",
       },
     },
   };
-  const labels = Languages_used(trump_data);
-  const dataset1 = Comment_by_language(trump_data, labels);
+  const labels = Languages_used(state.p1d);
+  const dataset1 = Comment_by_language(state.p1d, labels);
+  console.log("dataset1=\n", dataset1);
   const data = {
     labels,
     datasets: [
       {
-        label: "Trump",
+        label: state.p1n,
         data: dataset1,
         backgroundColor: "rgba(255, 99, 132, 0.5)",
       },
     ],
   };
+
+  if (twoPersons) {
+    options2 = {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "top",
+        },
+        title: {
+          display: true,
+          text: "",
+        },
+      },
+    };
+    labels2 = Languages_used(state.p2d);
+    dataset2 = Comment_by_language(state.p2d, labels2);
+    console.log("dataset2=\n", dataset2);
+    console.log("labels=\n", labels);
+    console.log("labels2=\n", labels2);
+    data2 = {
+      labels2,
+      datasets: [
+        {
+          label: state.p2n,
+          data: dataset2,
+          backgroundColor: "rgba(180, 99, 132, 0.5)",
+        },
+      ],
+    };
+  }
   return (
-    <div className="line_chart">
-      <Bar options={options} data={data} />
-    </div>
+    <>
+      <PersonSelection
+        changeState={changeState}
+        state={state}
+        twoPersons={twoPersons}
+      />
+      {!twoPersons && (
+        <div className="line_chart">
+          <Bar options={options} data={data} />
+        </div>
+      )}
+      {twoPersons && (
+        <>
+          <div className="line_chart">
+            <Bar options={options} data={data} />
+          </div>
+          <div className="line_chart">
+            <Bar options={options2} data={data2} />
+          </div>
+        </>
+      )}
+    </>
   );
 };
 export default Line_chart;
-
-const months = (X) => {
-  let p = "";
-  let a = 0;
-  let res = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-  for (let i = 0; i < X.length; i++) {
-    p = X[i].Year.substring(5, 7);
-    a = parseInt(p);
-    switch (a) {
-      case 1:
-        res[0] = res[0] + 1;
-        break;
-      case 2:
-        res[1] = res[1] + 1;
-        break;
-      case 3:
-        res[2] = res[2] + 1;
-        break;
-      case 4:
-        res[3] = res[3] + 1;
-        break;
-      case 5:
-        res[4] = res[4] + 1;
-        break;
-      case 6:
-        res[5] = res[5] + 1;
-        break;
-      case 7:
-        res[6] = res[6] + 1;
-        break;
-      case 8:
-        res[7] = res[7] + 1;
-        break;
-      case 9:
-        res[8] = res[8] + 1;
-        break;
-      case 10:
-        res[9] = res[9] + 1;
-        break;
-      case 11:
-        res[10] = res[10] + 1;
-        break;
-      case 12:
-        res[11] = res[11] + 1;
-        break;
-      default:
-    }
-  }
-  return res;
-};

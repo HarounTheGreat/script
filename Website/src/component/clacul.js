@@ -4,9 +4,9 @@ const Calcul = (X) => {
   let c = 0;
   let R = [];
   for (let i = 0; i < X.length; i++) {
-    if (X[i].an === "O") {
+    if (X[i].comment_type === "O") {
       a = a + 1;
-    } else if (X[i].an === "P") {
+    } else if (X[i].comment_type === "P") {
       b = b + 1;
     } else {
       c = c + 1;

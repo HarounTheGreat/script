@@ -26,9 +26,9 @@ const Numbers = (X) => {
   return R;
 };
 
-const Area_chart = ({ trump_data }) => {
+const Area_chart = () => {
   let array;
-  array = Numbers(trump_data);
+  array = Numbers(state.p1d);
   const data = {
     labels: ["Netural", "Positive", "Negative"],
     datasets: [

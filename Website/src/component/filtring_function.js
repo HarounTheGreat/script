@@ -142,15 +142,11 @@ export const calculate_data_by_type = (X) => {
   return res;
 };
 
-export const calculate_data_by_type_and_month = (
-  trump_data,
-  from_date,
-  to_date
-) => {
+export const calculate_data_by_type_and_month = (data, from_date, to_date) => {
   let data1;
   let d1 = [];
   let res = [];
-  data1 = filtring_by_date(trump_data, from_date, to_date, undefined);
+  data1 = filtring_by_date(data, from_date, to_date, undefined);
   d1 = calculate_data_by_type(data1);
   for (let i = 0; i < d1.length; i++) {
     res.push({ x: 10, y: d1[i], r: 10 });
@@ -297,8 +293,8 @@ export const filtring = (date, opinion, state, selectedLanguages) => {
   if (date.month !== "All") {
     res = Filtring_by_Month(date, state);
   }
-  // res = filtring_by_type(res, opinion);
-  // res = filtring_by_language(res, selectedLanguages);
+  res = filtring_by_type(res, opinion);
+  res = filtring_by_language(res, selectedLanguages);
   return res;
 };
 

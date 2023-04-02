@@ -72,7 +72,7 @@ const Multiaxis_line_chart = () => {
     plugins: {
       title: {
         display: true,
-        text: "Trump vs Obama",
+        text: "first vs second",
       },
     },
     scales: {
