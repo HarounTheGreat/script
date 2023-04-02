@@ -4,12 +4,12 @@ const Intro = ({ intro_img }) => {
     <div className="into">
       <div className="website-description">
         <div className="into-item into-item-1">
-          <h2>Fastest and easyest way to see reviews from social media</h2>
+          <h2>Fastest and easyest way to see Predicting Business Trends</h2>
         </div>
         <div className="into-item into-item-2">
           <p>
-            Accurately analyzing feedback from customers and evaluations in many
-            languages
+            Accurately predict trading trends using historical and real-time
+            data analysis.
           </p>
         </div>
         <button className="into-item into-item-3">See More</button>
