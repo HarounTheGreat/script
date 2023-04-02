@@ -6,11 +6,11 @@
 
 **can see bussiness static each year**
 
-![img](./IMG/page1.PNG)
+![img](./IMG/page1.png)
 
 **comporison between two Products to see from this chart we can see whitch product is the best seller**
 
-![img](./IMG/page2.PNG)
+![img](./IMG/page2.png)
 
 ---
 
