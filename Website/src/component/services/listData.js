@@ -1,63 +1,93 @@
 const listData = [
   {
     Id: 1,
-    Name: "trump",
-    Fullname: "Donald Trump",
-    Status: "Ex President of the USA",
+    Name: "acerPredator",
+    Fullname: "Acer Predator 300",
+    Status: "Gaming Laptop",
     Description:
-      "Donald John Trump is an American politician, media personality, and businessman who served as the 45th president of the United States from 2017 to 2021.",
-    Image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/800px-Donald_Trump_official_portrait.jpg",
+      "Acer Predator Helios 300 Gaming Laptop, 15.6 Full HD IPS, Intel i7 CPU, 16GB DDR4 RAM, 256GB SSD, GeForce GTX 1060-6GB, VR Ready, Red Backlit KB, Metal Chassis, Windows 10 64-bit, G3-571-77QK",
+    Image: "https://m.media-amazon.com/images/I/81g7AiqWrtL._AC_SL1500_.jpg",
   },
   {
     Id: 2,
-    Name: "biden",
-    Fullname: "Joseph Biden",
-    Status: "President of the USA",
+    Name: "ASUSZephyrusG14",
+    Fullname: "ASUS Zephyrus G14",
+    Status: "Gaming Laptop",
     Description:
-      "Joseph Robinette Biden Jr. is an American politician who is the 46th and current president of the United States. A member of the Democratic Party, he previously served as the 47th vice president from 2009 to 2017 under President Barack Obama, and represented Delaware in the United States Senate from 1973 to 2009.",
-    Image:
-      "https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQ2wPmYNixF92zIj_LsxSjjJQ7vO3CdccFkVEdKIvofULXBOwzb-Ef1bYv11mkcW5SJ",
+      "ASUS ROG Zephyrus G14 14-inch FHD 512GB SSD 2.9GHz VR Ready Laptop (8GB RAM, 8-Core AMD Ryzen 7, GeForce GTX 1650) Eclipse Gray, GA401IH-BR7N2BL",
+    Image: "https://m.media-amazon.com/images/I/51jLxJ1CXqL._AC_SL1000_.jpg",
   },
   {
     Id: 3,
-    Name: "putin",
-    Fullname: "Vladimir Putin",
-    Status: "Ex President of the USA",
+    Name: "Mercedes-Maybach S580",
+    Fullname: "Mercedes-Benz Maybach S500",
+    Status: "Mercedes Car",
     Description:
-      "Vladimir Vladimirovich Putin is a Russian politician and former intelligence officer serving as the current president of Russia. Putin has served continuously as president or prime minister since 1999: as prime minister from 1999 to 2000 and from 2008 to 2012, and as president from 2000 to 2008 and since 2012.",
-    Image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Vladimir_Putin_17-11-2021_%28cropped%29.jpg/330px-Vladimir_Putin_17-11-2021_%28cropped%29.jpg",
+      "Supreme Car Cover for Mercedes-Benz Maybach S500 S550 S560 S600 S580 4MATIC 2016-2023 Sedan 4-Door All Weather Full Coverage Dust, Snow, Rain, Hail Protection Outdoor.",
+    Image: "https://m.media-amazon.com/images/I/61SxuTzeIgL._AC_SL1500_.jpg",
   },
   {
     Id: 4,
-    Name: "zelenskyy",
-    Fullname: "Volodymyr Zelenskyy",
-    Status: "President of the USA",
+    Name: "BMW X3 2017",
+    Fullname: "BMW X3 2017",
+    Status: "BMW Car",
     Description:
-      "Volodymyr Oleksandrovych Zelenskyy is a Ukrainian politician and former comedian and actor who has served as the sixth and current president of Ukraine since 2019. Born to a Ukrainian Jewish family, Zelenskyy grew up as a native Russian speaker in Kryvyi Rih, a major city of Dnipropetrovsk Oblast in central Ukraine.",
-    Image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Volodymyr_Zelensky_Official_portrait.jpg/800px-Volodymyr_Zelensky_Official_portrait.jpg",
+      "5 Layer Car Cover for BMW X3 2017-2023 SUV 4-Door Semi Custom Fit Full Coverage Pollution, Dust, Sun, Snow, Rain, Hail All Weather Protection, Breathable.",
+    Image: "https://m.media-amazon.com/images/I/71aFzHSlYeL._AC_SL1500_.jpg",
   },
   {
     Id: 5,
-    Name: "macron",
-    Fullname: "Emmanuel Macron",
-    Status: "President of the USA",
+    Name: "AcerNitro5",
+    Fullname: "Acer Nitro 5",
+    Status: "Gaming Laptop",
     Description:
-      "Emmanuel Jean-Michel Frédéric Macron is a French politician serving as the 25th and current President of France since 2017. Ex officio, he is also one of the two Co-Princes of Andorra",
-    Image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/38/Emmanuel_Macron.jpg",
+      "Acer Nitro 5 AN515-57-79TD Gaming Laptop | Intel Core i7-11800H | NVIDIA GeForce RTX 3050 Ti Laptop GPU | 15.6 FHD 144Hz IPS Display | 8GB DDR4 | 512GB NVMe SSD | Killer Wi-Fi 6 | Backlit Keyboard.",
+    Image: "https://m.media-amazon.com/images/I/81lDOtJRTkL._AC_SL1500_.jpg",
   },
   {
     Id: 6,
-    Name: "obama",
-    Fullname: "Barack Obama",
-    Status: "44th U.S. President",
+    Name: "Alienwarem15R7",
+    Fullname: "Alienware m15 R7",
+    Status: "Gaming Laptop",
     Description:
-      "Barack Hussein Obama II is an American former politician who served as the 44th president of the United States from 2009 to 2017. A member of the Democratic Party, he was the first African-American president of the United States.",
-    Image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
+      "Alienware m15 R7 Gaming Laptop - 15.6-inch QHD (2560 x 1440) 240Hz, Core i7-12700H, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 3070 Ti 8GB GDDR6, Bluetooth, HDMI, USB-C, Wi-Fi 6, Windows 11 Home – Black.",
+    Image: "https://m.media-amazon.com/images/I/71gxEgqCI0L._AC_SL1500_.jpg",
+  },
+  {
+    Id: 7,
+    Name: "Lenovo-2021",
+    Fullname: "Lenovo - 2021",
+    Status: "Gaming Laptop",
+    Description:
+      "Lenovo - 2021 - IdeaPad Gaming 3 - Laptop Computer - 15.6 FHD Display -120Hz - AMD Ryzen 5 5600H - 8GB RAM - 256GB Storage - NVIDIA GeForce GTX 1650 - Windows 11 Home.",
+    Image: "https://m.media-amazon.com/images/I/813-VnIfJjL._AC_SL1500_.jpg",
+  },
+  {
+    Id: 8,
+    Name: "HP-Victus",
+    Fullname: "HP - Victus",
+    Status: "Gaming Laptop",
+    Description:
+      "HP - Victus 15.6 Gaming Laptop - Intel Core i5-12450H - 8GB Memory - NVIDIA GeForce GTX 1650-512GB SSD - Mica Silver - Model 15-fa0031dx.",
+    Image: "https://m.media-amazon.com/images/I/81uTW77d3rL._AC_SL1500_.jpg",
+  },
+  {
+    Id: 9,
+    Name: "RazerBlade16",
+    Fullname: "Razer Blade 16",
+    Status: "Gaming Laptop",
+    Description:
+      "Razer Blade 16 Gaming -Laptop: NVIDIA GeForce RTX 4070 13th Gen Intel 24-Core i9 HX CPU 16 Dual Mode Mini LED (4K UHD+ 120Hz & FHD+ 240Hz) 32GB -RAM1TB SSD Compact GaN-Charger Windows 11",
+    Image: "https://m.media-amazon.com/images/I/81cZU2826PL._AC_SL1500_.jpg",
+  },
+  {
+    Id: 10,
+    Name: "MSIStealthGS77",
+    Fullname: "MSI Stealth GS77",
+    Status: "Gaming Laptop",
+    Description:
+      "MSI Stealth GS77 17.3 QHD 240Hz Ultra Thin & Light Gaming Laptop: Intel Core i7-12700H RTX 3080 Ti 32GB DDR5 1TB NVMe SSD, USB-Type C, Thunderbolt 4, CNC Aluminum, Win11 Pro: Core Black 12UHS-083.",
+    Image: "https://m.media-amazon.com/images/I/71jOOIDHC+L._AC_SL1500_.jpg",
   },
 ];
 export default listData;

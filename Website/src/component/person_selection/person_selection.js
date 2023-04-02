@@ -365,33 +365,12 @@ const PersonSelection = ({ state, changeState }) => {
         <div
           className="fancy"
           onClick={() => {
-            let labels;
             let p2d;
             let p2n;
-            let result;
-            console.log("date=\n", date);
-            labels = label(date);
-            let dataset2;
-            let dataset1 = Data_by_Day(
-              labels,
-              date.month,
-              selectedPersons.person1.person_data
-            );
             if (selectedPersons.person2 === undefined) {
               p2d = undefined;
               p2n = undefined;
-              dataset2 = undefined;
             } else {
-              dataset2 = Data_by_Day(
-                labels,
-                date.month,
-                selectedPersons.person2.person_data
-              );
-              result = {
-                labels: labels,
-                dataset1: dataset1,
-                dataset2: dataset2,
-              };
               p2d = filtring(
                 date,
                 opinion,
@@ -400,7 +379,6 @@ const PersonSelection = ({ state, changeState }) => {
               );
               p2n = selectedPersons.person2.Fullname;
             }
-            console.log("result=\n", result);
             changeState(
               selectedPersons.person1.Fullname,
               filtring(
@@ -410,8 +388,7 @@ const PersonSelection = ({ state, changeState }) => {
                 selectedLanguages
               ),
               p2n,
-              p2d,
-              result
+              p2d
             );
           }}
         >

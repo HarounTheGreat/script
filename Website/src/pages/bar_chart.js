@@ -32,32 +32,14 @@ const Bar_chart = () => {
     p2n: undefined,
     p2d: undefined,
   });
-  const [result, setResult] = useState({
-    labels: [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ],
-    dataset1: months(state.p1d),
-    dataset2: months(state.p2d),
-  });
-  const changeState = (p1n, p1d, p2n, p2d, result) => {
+
+  const changeState = (p1n, p1d, p2n, p2d) => {
     setState({
       p1n: p1n,
       p1d: p1d,
       p2n: p2n,
       p2d: p2d,
     });
-    setResult(result);
   };
   twoPersons = state.p2n !== undefined;
   const options = {
@@ -69,10 +51,23 @@ const Bar_chart = () => {
     },
   };
 
-  const dataset1 = result.dataset1;
-  const dataset2 = result.dataset2;
+  const dataset1 = months(state.p1d);
+  const dataset2 = months(state.p2d);
   // console.log("dataset1=\n", dataset1);
-  const labels = result.labels;
+  const labels = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
   const data = {
     labels,
     datasets: [
