@@ -1,3 +1,5 @@
+<img src="https://ik.imagekit.io/dresma/Dresma_Library/manager-openings_NW3bXTTFP.gif">
+
 # script
 
 ##### my plan for hackathon is to develope platform to visualising and Predicting Business Trends then create model using random forest algorithm
@@ -34,3 +36,11 @@ business_list is an Array contain name of product or business and Youtube URL Li
 ---
 
 analysing data using Power Bi
+
+![img](./IMG/PowerBi1.PNG)
+
+![img](./IMG/PowerBi2.PNG)
+
+![img](./IMG/PowerBi3.PNG)
+
+---
